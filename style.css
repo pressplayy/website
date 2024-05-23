@@ -1,0 +1,172 @@
+
+/*comentário é feito com barra e asterisco*/
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {/*sempre que o cursor ficar por cima do A, algo acontece*/
+color: #354991;
+}
+
+a img:hover { /* todas as imagens com links vao ficar grandes*/
+    transform: scale(1.1);
+    transition: transform 0.5;
+}
+
+.diznaoaohover  a img:hover{ /*Não quero estas imagens a ficar grandes*/
+transform: none ; transition: none
+}
+
+.loginsignin { /*simbolos de log in e sign in*/
+    margin-top: 30px;
+    transform: scale(0.7);
+    
+}
+
+.LOGO {  /*LOGO*/
+        margin-top: 30px;
+        transform: scale(1.9);
+    }
+
+.letragrande { /*todos os titulos com letra maiuscula e vão para o centro*/
+    text-transform: uppercase; text-align: center;
+}
+
+.powers { /*simbolo do mago do arqueiro e do guerreiro*/
+    text-transform: uppercase; text-align: center;
+    margin-top: 20px;
+}
+
+body { /* cor de fundo do site*/
+    background: var(--Background, linear-gradient(180deg, #829AED 0.24%, #354991 50.16%, #444958 94.44%));
+}
+
+.navbar-nav { /* tudo na Home vai estar a maiusculas*/
+    text-transform: uppercase;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.godofwar35px { /*margem na imagem do god of war*/
+    margin-bottom: 35px;
+    margin-top: 25px;
+}
+
+.CHY { /*Choose your player como quero que fique*/
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #EBE7FB;
+    position: relative;
+    top: -80px; /*muda a posição do título, mas n aparece no código. EXCEÇÃO!*/
+}
+
+.AMW { /*Archer Mage Warrior texto*/
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #EBE7FB;
+}
+
+.nav-link { /*todo o menu está em Press Start 2p*/
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .barra-de-cima { /*barra de cima onde começa tudo*/
+    background-color: black;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .redesocias { /*redes socias presentes na barra de cima*/
+    padding-left: 50px;
+  }
+
+.pacman {
+    margin-bottom: 20px ;
+    margin top: 40px;
+}
+
+.AboutUs h1 { /*aqui, apesar de n precisar de por o h1 de certa forma, é necessário colocar pois quanto mais específica for, melhor é para ele ler*/
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.AboutUs2 p { /*todos os parágrafos que estiverem dentro desta classe*/
+    color: white;
+    font-family: "Exo 2", system-ui;
+    font-size: 23px;
+} 
+
+.Fetch h2{
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    text-align: center;
+}
+
+.Fetch2 p {
+    color: white;
+    font-family: "Exo 2", system-ui;
+    font-weight: 400;
+    font-size: 17px;
+    font-style: normal;
+    text-align: center;
+}
+
+.textoembranco { /*todos os textos que eu quero em branco*/
+    color: #EBE7FB;
+  }
+
+.Exo2 p {
+    color: white;
+    font-family: "Exo 2", system-ui;
+}
+
+.pressplaybottom {
+    margin-top: 30px;
+}
+
+
+
+/* =============================================================== */
+
+ 
+.box { /* retângulo do alien*/
+    padding: 150px 0px;
+    background-image: url(images/Retanguloalien.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    /* border: 2px solid black; */
+
+    /* para aplicar borda com transição de cor */
+    border-image: linear-gradient(#00022A, #BEBDDA) 90; /* o últim valor (90) é o ângulo da transição da cor */
+    border-width: 7px;
+    border-style: solid;
+} 
+
+  /* Adicionado estilo H2 para a dimensão dos titulos */
+  h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+/* todos os conteúdos dentro de DIV contido em classes BOX ficam centrados */
+.box div {
+    text-align: center;
+}
