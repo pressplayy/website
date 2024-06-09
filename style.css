@@ -1,6 +1,28 @@
 
 /*comentário é feito com barra e asterisco*/
 
+/*star rating*/
+
+.rating-css input {
+    display: none;
+}
+
+.rating-css input + label {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.rating-css input:checked + label ~ label {
+    color: #DEDEDE;
+}
+
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+/*PÁGINA 1*/
+
 a {
     color: black;
     text-decoration: none;
@@ -10,9 +32,19 @@ a:hover {/*sempre que o cursor ficar por cima do A, algo acontece*/
 color: #354991;
 }
 
+.fa-magnifying-glass {
+font-size: 20px;
+}
+
 a img:hover { /* todas as imagens com links vao ficar grandes*/
     transform: scale(1.1);
     transition: transform 0.5;
+}
+
+.men {
+    background-color: #CEE6F0;
+    border: 6px solid black;
+    border-radius: 50px;
 }
 
 .diznaoaohover  a img:hover{ /*Não quero estas imagens a ficar grandes*/
@@ -86,8 +118,14 @@ body { /* cor de fundo do site*/
     font-style: normal;
   }
 
-  .redesocias { /*redes socias presentes na barra de cima*/
-    padding-left: 50px;
+  .redesociais  { /*redes socias presentes na barra de cima*/
+    padding-left: 80px;
+    text-align: right;
+  }
+
+  .redesociais img {
+    width: 28px;
+    height: auto; /* ajusta proporcionalmente a altura de acordo com o valor fixo da largura*/
   }
 
 .pacman {
@@ -109,6 +147,14 @@ body { /* cor de fundo do site*/
     font-size: 23px;
 } 
 
+.TresJogos h1 {
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 27px;
+    font-style: normal;
+}
+
 .Fetch h2{
     color: white;
     font-family: "Press Start 2P", system-ui;
@@ -117,6 +163,7 @@ body { /* cor de fundo do site*/
     font-style: normal;
     text-align: center;
 }
+
 
 .Fetch2 p {
     color: white;
@@ -137,14 +184,15 @@ body { /* cor de fundo do site*/
 }
 
 .pressplaybottom {
-    margin-top: 30px;
+    text-align: center;
+    background-color: black;
+}
+
+.mapa {
+    margin-bottom: 20px;
 }
 
 
-
-/* =============================================================== */
-
- 
 .box { /* retângulo do alien*/
     padding: 150px 0px;
     background-image: url(images/Retanguloalien.png);
@@ -169,4 +217,279 @@ body { /* cor de fundo do site*/
 /* todos os conteúdos dentro de DIV contido em classes BOX ficam centrados */
 .box div {
     text-align: center;
+}
+
+/*PÁGINA INDEX ICON ----------------------------------------------------------------------------------------*/
+.Feiticeiro h2 {
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+}
+
+.Back h3 {
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    text-align: right;
+    margin-top: 67px; 
+}
+
+/* PÁGINA Horror Adventure ---------------------------------------------------------------*/
+
+.HorrorAdventure h1 {
+    color: #4D8A10;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 67px;
+}
+
+.LN h1 {
+    color:white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-size: 19px;
+    font-style: normal;
+    text-align: left;
+    margin-top: 67px;  
+}
+
+.LNT p {
+    color: #FFF;
+font-family: "Exo 2";
+font-size: 18.5px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 195.652% */
+}
+
+/* PÁGINA REVIEWS --------------------------------------------------------------------------------------------*/
+.reviews h1 {
+    color: #000;
+-webkit-text-stroke-width: 3;
+-webkit-text-stroke-color: #DEDEDE;
+font-family: "Press Start 2P";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -2px;
+text-align: center;
+margin-top: 67px;
+}
+
+.alien h1 {
+    color: #FFF;
+leading-trim: both;
+text-edge: cap;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Press Start 2P";
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.05px;
+text-transform: capitalize;
+text-align: center;
+margin-top: 48px;
+}
+
+.alien2 h1 {
+    color: #FFF;
+leading-trim: both;
+text-edge: cap;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Press Start 2P";
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.05px;
+text-transform: capitalize;
+text-align: center;
+margin-top: 48px;
+}
+
+.alien3 h1 {
+        color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: "Press Start 2P";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.viewmore {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Página ALIEN -------------------------------------------------------------------------------------*/
+
+.AlienIsolation {
+    color: black;
+}
+
+.Ripley {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px ;
+}
+
+.pressplayicon img{
+    text-align: center;
+    width: 480px;
+}
+
+.alientxt h2{
+    color: var(--Letras-Press-start, #EBE7FB);
+text-align: center;
+-webkit-text-stroke-width: 2.299999952316284;
+-webkit-text-stroke-color: #1D1E3F;
+font-family: "Exo 2";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 150% */
+}
+
+.user img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.alienp p {
+    color: #000;
+font-family: "Exo 2";
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 150% */
+}
+
+/* PÁGINA NOVIDADES--------------------------------------------------------------------*/
+
+.abril h2{
+    color: #3911DC;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #FFF;
+font-family: "Press Start 2P";
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.75px;
+margin-top: 40px;
+}
+
+.abril1 p {
+    color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Exo 2";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 180% */
+}
+
+.maio h2 {
+    color: #3911DC;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #FFF;
+font-family: "Press Start 2P";
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.75px;
+margin-top: 40px;
+text-align: center;
+}
+
+.maio1 p {
+    color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Exo 2";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 180% */
+}
+
+.junho h2{
+    color: #3911DC;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #FFF;
+font-family: "Press Start 2P";
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.75px;
+margin-top: 40px;
+}
+
+.junho1 p {
+    color: #FFF;
+text-align: center;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Exo 2";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 45px; /* 180% */
+}
+
+.tobeannounced {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.novidades h1 {
+    color: #EBE7FB;
+-webkit-text-stroke-width: 1;
+-webkit-text-stroke-color: #000;
+font-family: "Press Start 2P";
+font-size: 35px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -1.75px;
+text-align: center;
+}
+
+.wolf p{
+    color: #FFF;
+    font-family: "Exo 2";
+    font-size:20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px; /* 195.652% */
+}
+
+.outlast img{
+    margin-top: 40px;
 }
